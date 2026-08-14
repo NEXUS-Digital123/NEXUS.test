@@ -520,6 +520,52 @@
             margin-right: auto;
         }
 
+        /* Contact Links */
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        .contact-link {
+            padding: 0.8rem 1.8rem;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s;
+        }
+
+        .contact-link.tg {
+            color: var(--accent);
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+        }
+
+        .contact-link.tg:hover {
+            background: rgba(99, 102, 241, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(99, 102, 241, 0.2);
+        }
+
+        .contact-link.wa {
+            color: #25d366;
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid rgba(37, 211, 102, 0.2);
+        }
+
+        .contact-link.wa:hover {
+            background: rgba(37, 211, 102, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.2);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -823,7 +869,11 @@
         <div class="cta-box reveal">
             <h2 data-i18n="cta_title">Готовы начать проект?</h2>
             <p data-i18n="cta_desc">Расскажите о вашей идее, и мы предложим лучшее решение</p>
-            <a href="https://t.me/NEXUS_Digital_it" onclick="window.location='tg://resolve?domain=NEXUS_Digital_it';" class="btn btn-primary" data-i18n="cta_btn">Обсудить проект</a>
+            <button class="btn btn-primary" data-i18n="cta_btn">Обсудить проект</button>
+            <div class="contact-links">
+                <a href="https://t.me/NEXUS_Digital_it" class="contact-link tg">Telegram</a>
+                <a href="https://wa.me/77073722713" class="contact-link wa">WhatsApp</a>
+            </div>
         </div>
     </section>
 
